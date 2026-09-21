@@ -25,7 +25,7 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-sky-400 to-emerald-400 bg-clip-text text-transparent">
-            Proyek Pilihan
+            Yang saya lakukan sejauh ini
           </h2>
           <p className="mt-4 text-slate-400">
             Beberapa karya dan proyek yang pernah saya kerjakan.

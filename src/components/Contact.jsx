@@ -11,7 +11,7 @@ export default function Contact() {
 
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="mailto:astralcode55@gmail.com"
+            href="mailto:zainaffandi311@gmail.com"//email
             className="w-full sm:w-auto rounded-xl bg-sky-500 px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-sky-500/25 hover:bg-sky-400 transition-all hover:scale-105 active:scale-95"
           >
             Kirim Email
