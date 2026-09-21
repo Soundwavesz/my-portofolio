@@ -7,7 +7,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo / Brand Name */}
-        <a href="#" className="text-xl font-bold bg-linear-to-r from-sky-400 to-emerald-400 bg-clip-text text-transparent">
+        <a href="#" className="text-xl font-bold bg-gradient-to-r from-sky-400 to-emerald-400 bg-clip-text text-transparent">
           Portfolio.
         </a>
 
