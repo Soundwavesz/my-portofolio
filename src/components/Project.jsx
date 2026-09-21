@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 export default function Projects() {
   const projects = [
     {
@@ -23,20 +25,31 @@ export default function Projects() {
   return (
     <section id="projects" className="py-24 bg-slate-900 text-white px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
           <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-sky-400 to-emerald-400 bg-clip-text text-transparent">
-            Yang saya lakukan sejauh ini
+            Proyek Pilihan
           </h2>
           <p className="mt-4 text-slate-400">
             Beberapa karya dan proyek yang pernah saya kerjakan.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 hover:border-sky-500/50 transition-all hover:-translate-y-2 group"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              whileHover={{ y: -8 }}
+              className="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 hover:border-sky-500/50 transition-colors group"
             >
               <h3 className="text-xl font-bold text-slate-100 group-hover:text-sky-400 transition-colors">
                 {project.title}
@@ -64,7 +77,7 @@ export default function Projects() {
                   Lihat Detail <span>→</span>
                 </a>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
