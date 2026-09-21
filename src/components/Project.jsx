@@ -3,23 +3,23 @@ import { motion } from "framer-motion"
 export default function Projects() {
   const projects = [
     {
-      title: "Interactive Portfolio",
-      description: "Website portofolio interaktif yang dibangun menggunakan React, Tailwind CSS, dan Vite.",
+      title: "Website latihan Interactive Portfolio",
+      description: "Website portofolio interaktif yang saat ini saya bangun menggunakan React, Tailwind CSS, dan Vite sebagai bahan latian.",
       tech: ["React", "Tailwind CSS", "Vite"],
       link: "#",
     },
     {
-      title: "Task Management App",
-      description: "Aplikasi pengelola tugas harian dengan fitur drag-and-drop dan penyimpanan lokal.",
-      tech: ["React", "Tailwind CSS", "JavaScript"],
+      title: "Bahasa Jepang N4",
+      description: "Saya mampu berbicara dalam bahasa jepang setidaknya untuk level sehari hari, dan saat ini saya tengah belajar untuk level N3",
+      tech: ["JFT Basic-A2"],
       link: "#",
     },
-    {
-      title: "E-Commerce Dashboard",
-      description: "Dashboard analitik penjualan real-time dengan grafik interaktif dan manajemen stok.",
-      tech: ["React", "Chart.js", "Tailwind CSS"],
-      link: "#",
-    },
+    // {
+    //   title: "E-Commerce Dashboard",
+    //   description: "Dashboard analitik penjualan real-time dengan grafik interaktif dan manajemen stok.",
+    //   tech: ["React", "Chart.js", "Tailwind CSS"],
+    //   link: "#",
+    // },
   ]
 
   return (
@@ -33,10 +33,10 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-sky-400 to-emerald-400 bg-clip-text text-transparent">
-            Proyek Pilihan
+            Prengalaman Saya
           </h2>
           <p className="mt-4 text-slate-400">
-            Beberapa karya dan proyek yang pernah saya kerjakan.
+            Ini adalah kegiatan atau Pengalaman yang saya lakukan guna meningkatkan skill Saya
           </p>
         </motion.div>
 

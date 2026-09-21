@@ -1,7 +1,13 @@
+import { motion } from "framer-motion"
 export default function Contact() {
   return (
     <section id="contact" className="py-24 bg-slate-950 text-white px-6">
-      <div className="max-w-4xl mx-auto text-center">
+      <motion.div 
+      initial={{opacity:0, y:20}}
+      whileInView={{opacity:1, y:0}}
+      viewport={{once: true}}
+      transition={{duration:0.6}}
+      className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-sky-400 to-emerald-400 bg-clip-text text-transparent">
           Mari Bekerja Sama
         </h2>
@@ -30,7 +36,7 @@ export default function Contact() {
         <div className="mt-20 pt-8 border-t border-slate-800/80 text-sm text-slate-500">
           <p>© {new Date().getFullYear()} Portfolio. Built with React & Tailwind CSS on Linux Mint.</p>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }
